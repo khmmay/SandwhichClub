@@ -43,7 +43,7 @@ public class JsonUtils {
             JSONArray ingredientArray = rootObject.getJSONArray("ingredients");
             List<String> alsoKnownAsList = new ArrayList<>();
 
-            //Iterate through the array of aka and add it to list
+            //Iterate through the array of alsoKnownAs and add it to list
             for (int i = 0; i < aka.length(); i++) {
                 String alsoKnownAs = aka.getString(i);
                 alsoKnownAsList.add(alsoKnownAs);
